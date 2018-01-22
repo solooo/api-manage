@@ -1,6 +1,4 @@
-server:
-  servlet-path: /app
-  port: 8080
+
 
 spring:
   datasource:
@@ -9,6 +7,9 @@ spring:
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    cache: false
+    mode: html
 
 mybatis:
   type-aliases-package: net.solooo.**.model
